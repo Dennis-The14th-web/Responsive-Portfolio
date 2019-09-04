@@ -215,25 +215,43 @@ body {
   
  /*......................MEDIA!!!!..................*/
 
- @media(min-width: 980px) { 
+
+
+ @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;}
+    
+    .main-section{margin-top: 40px;}
+    #logo {width: 100%;}
+    .work {width: 100%;}
+    nav a {margin-right: 60px; }
+  }
+
   
-  .main-section{width: 678px; }
+.work{
+  -webkit-animation-name: responsive; 
+  -webkit-animation-duration: 4s; 
+  animation-name: responsive;
+  animation-duration: 4s;
 }
 
-@media(min-width: 768px) { 
- 
-  #main-container{width: 650px;}
+
+@-webkit-keyframes responsive {
+  0%   {left:0px; right:0px;}
+  25%  {left:200px; right:0px;}
+  50%  {left:200px; right:200px;}
+  75%  {left:0px; right:200px;}
+  100% {left:0px; right:0px;}
+}
+
+@keyframes responsive {
+  0%   {right:0px; left:0px;}
+  25%  {right:200px; left:0px;}
+  50%  {right:200px; left:200px;}
+  75%  {right:0px; left:200px;}
+  100% {right:0px; left:0px;}
 }
 
 
-@media(min-width: 257px) { 
- 
-  .main-section{margin-top: 40px;}
-  #logo {width: 100%;}
-  .work {width: 100%;}
-  nav a {margin-right: 60px; }
-}
 
  
-/*.....................ANIMATION!!!!....................*/
-
