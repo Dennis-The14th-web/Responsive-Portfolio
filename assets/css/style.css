@@ -226,7 +226,7 @@ body {
 }
 
 
-@media(min-width: 250px) { 
+@media(min-width: 257px) { 
  
   .main-section{margin-top: 40px;}
   #logo {width: 100%;}
